@@ -1,4 +1,4 @@
-/* Reset styles */
+
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -14,14 +14,14 @@ body {
 header {
     background-color: #013b8b;
     color: #fff;
-    text-align: left; /* Metni sol üste alır */
+    text-align: left; 
     padding: 20px;
 }
 
 nav {
     background-color: #000;
     color: #df2a2a;
-    text-align: right; /* Metni sağa yaslar */
+    text-align: right; 
     padding: 10px;
 }
 #anasayfa-link{
@@ -30,7 +30,7 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    padding: 0; /* UL içindeki boşluğu kaldırır */
+    padding: 0; 
 }
 
 nav ul li {
@@ -39,7 +39,7 @@ nav ul li {
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* İlk elemanın sola hiç boşluk bırakır */
+    margin-left: 0; 
 }
 
 nav ul li a {
@@ -67,9 +67,9 @@ main {
     font-family: 'Carter One', cursive;
 }
  #profil p {
-    text-align: center; /* Paragrafı ortalar */
-    max-width: 50%; /* Paragrafın en fazla genişliği ekranın genişliği kadar olsun */
-    margin: 0 auto; /* Paragrafı yatayda ortala */
+    text-align: center; 
+    max-width: 50%; 
+    margin: 0 auto; 
     color: rgb(242, 246, 250);
     font-family: 'Carter One', cursive;
 }
@@ -77,11 +77,11 @@ main {
     text-align: center;
 }
 #sosyal-medya a {
-    margin-right: 20px; /* Her ikon arasına 20 piksel boşluk bırakır */
+    margin-right: 20px; 
 }
 
 #sosyal-medya i {
-    font-size: 30px; /* İkonları büyütür */
+    font-size: 30px; 
 }
 
 
@@ -91,8 +91,7 @@ main {
     }
 
     nav {
-        text-align: center; /* Metni ortalar */
-    }
+        text-align: center; 
 
     nav ul {
         padding: 5px;
@@ -110,4 +109,5 @@ main {
     footer {
         position: static;
     }
+}
 }
