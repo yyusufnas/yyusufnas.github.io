@@ -91,10 +91,10 @@ main {
     }
     #profil p {
         white-space: normal; 
-        overflow: visible; 
+        overflow: visible;
         text-overflow: clip; 
+        display: block; 
     }
-
     nav {
         text-align: center; 
 
