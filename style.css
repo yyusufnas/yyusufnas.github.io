@@ -89,6 +89,11 @@ main {
     header {
         padding: 10px;
     }
+    #profil p {
+        white-space: normal; 
+        overflow: visible; 
+        text-overflow: clip; 
+    }
 
     nav {
         text-align: center; 
