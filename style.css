@@ -1,34 +1,45 @@
-
+/* Reset styles */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #43ccde;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #013b8b;
     color: #fff;
-    text-align: center;
+    text-align: left; /* Metni sol üste alır */
     padding: 20px;
 }
 
+nav {
+    background-color: #000;
+    color: #df2a2a;
+    text-align: right; /* Metni sağa yaslar */
+    padding: 10px;
+}
+#anasayfa-link{
+    text-align: left;
+    color: aqua;
+}
 nav ul {
     list-style-type: none;
-    background-color: #333;
-    text-align: center;
-    padding: 10px;
+    padding: 0; /* UL içindeki boşluğu kaldırır */
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* İlk elemanın sola hiç boşluk bırakır */
 }
 
 nav ul li a {
@@ -39,17 +50,38 @@ nav ul li a {
 main {
     margin: 20px;
     padding: 20px;
-    background-color: #fff;
+    
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+#profil {
     text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+}
+
+#profil img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+#profil h2{
+    font-family: 'Carter One', cursive;
+}
+ #profil p {
+    text-align: center; /* Paragrafı ortalar */
+    max-width: 50%; /* Paragrafın en fazla genişliği ekranın genişliği kadar olsun */
+    margin: 0 auto; /* Paragrafı yatayda ortala */
+    color: rgb(242, 246, 250);
+    font-family: 'Carter One', cursive;
+}
+#sosyal-medya{
+    text-align: center;
+}
+#sosyal-medya a {
+    margin-right: 20px; /* Her ikon arasına 20 piksel boşluk bırakır */
+}
+
+#sosyal-medya i {
+    font-size: 30px; /* İkonları büyütür */
 }
 
 
@@ -57,20 +89,24 @@ footer {
     header {
         padding: 10px;
     }
-    
+
+    nav {
+        text-align: center; /* Metni ortalar */
+    }
+
     nav ul {
         padding: 5px;
     }
-    
+
     nav ul li {
         margin-right: 10px;
     }
-    
+
     main {
         margin: 10px;
         padding: 10px;
     }
-    
+
     footer {
         position: static;
     }
