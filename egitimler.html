@@ -26,7 +26,7 @@
     font-size: 16px;
   }
 
-  /* Lightbox stilleri */
+  
   .lightbox {
     display: none;
     position: fixed;
@@ -48,6 +48,7 @@
   .lightbox img {
     max-width: 90%;
     max-height: 90%;
+    cursor: pointer;
   }
 
   .lightbox-close {
@@ -93,8 +94,8 @@
   </div>
 </div>
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <div class="lightbox-content">
     <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
     <img src="" alt="" id="lightbox-img">
@@ -102,7 +103,7 @@
 </div>
 
 <script>
-  // Lightbox'ı açma fonksiyonu
+
   function openLightbox(imageSrc) {
     var lightbox = document.getElementById("lightbox");
     var lightboxImg = document.getElementById("lightbox-img");
@@ -110,7 +111,7 @@
     lightboxImg.src = imageSrc;
   }
 
-  // Lightbox'ı kapatma fonksiyonu
+  
   function closeLightbox() {
     var lightbox = document.getElementById("lightbox");
     lightbox.style.display = "none";
