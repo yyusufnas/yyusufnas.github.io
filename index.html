@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC1BQGLH4H"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -18,7 +19,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-       
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
         #theme-toggle {
             position: fixed;
             top: 20px;
@@ -36,8 +42,8 @@
 
         
         .dark-theme {
-            background-color: black;
-            color: white;
+            background-color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
         }
 
        
@@ -47,8 +53,20 @@
 
       
         .dark-theme-text {
-            color: white !important;
+            color: rgb(0, 0, 0) !important;
         }
+        
+        #profil p {
+    text-align: center; 
+    max-width: 50%; 
+    margin: 0 auto; 
+    color: rgb(255, 255, 255);
+    font-family: 'Carter One', cursive;
+}
+#profil h2{
+    font-family: 'Carter One', cursive;
+    color: rgb(255, 255, 255);
+}
     </style>
 </head>
 <body>
@@ -68,7 +86,7 @@
         <section>
             <div id="profil">
                 <img src="1.jpeg" alt="Yusuf'un Profil Fotoğrafı">
-                <h2>Yusuf</h2>
+                <h2 id="name">Yusuf</h2>
                 <p id="hakkimda">Merhaba, ben Yusuf. Zonguldak Bülent Ecevit Üniversitesi'nde Bilgisayar Mühendisligi 2. sınıf ögrencisiyim. Siber Güvenlik alanıyla ugrasıyorum. Siber Vatan Projesi kapsamında Yavuzlar takımında Web Güvenligi ile ilgili calısmalar yapıyoruz. PHP ve Golang dillerini kullanıyorum.</p>
             </div>
 
@@ -90,7 +108,9 @@
 
             
             var hakkimda = document.getElementById("hakkimda");
+            var name=document.getElementById("name");
             hakkimda.classList.toggle("dark-theme-text");
+            name.classList.toggle("dark-theme-text");
         }
     </script>
 </body>
